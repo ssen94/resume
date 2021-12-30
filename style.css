@@ -28,9 +28,12 @@ body
   margin: 50px;
   background: #fff;
   display: grid;
- grid-template-columns: 1fr 2fr;
+ grid-template-columns: 1fr 2fr; 
  box-shadow: 0 35px 55px rgb(0,0,0,0.1) ;
 }
+
+
+
 
 .container .left_side
 {
@@ -128,6 +131,12 @@ body
   position: relative;
   list-style: none;
   margin: 10px o; 
+  /* cursor: pointer; */
+}
+
+.contactInfo  ul li a
+{
+
   cursor: pointer;
 }
 
@@ -148,6 +157,11 @@ color: #fff;
 font-weight: 300;
 }
 
+.contactInfo  ul li a
+{
+color: #fff;
+font-weight: 300;
+}
 .contactInfo.education li
 {
 margin-bottom: 15px;
@@ -230,6 +244,7 @@ p{
 .about .box .year_company
 {
   min-width: 150px;
+  
 }
 .about .box .year_company h5
 {
@@ -276,4 +291,32 @@ p{
 color: #848c99;
 text-transform: uppercase;
 font-weight: 500;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 1000px)
+{
+  .container 
+  {
+    margin: 10px;
+    grid-template-columns:  repeat(1, 1fr);
+  }
+}
+
+
+@media (max-width: 600px)
+{
+  .about .box 
+  {
+    flex-direction:  column;
+  }
+
+}
+
+.about .box .year_company {
+
+  min-width: 150px;
+  margin-bottom: 5px;
 }
